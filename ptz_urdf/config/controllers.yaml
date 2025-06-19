@@ -1,0 +1,23 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    pan_joint_controller:
+      type: position_controllers/JointPositionController
+      joint: pan_joint
+      pid:
+        p: 30.0
+        i: 0.0
+        d: 0.0
+
+    tilt_joint_controller:
+      type: position_controllers/JointPositionController
+      joint: tilt_joint
+      pid:
+        p: 30.0
+        i: 0.0
+        d: 0.0
+
