@@ -13,6 +13,7 @@ ros2 topic pub /target_point geometry_msgs/PointStamped   "{header: {frame_id: '
 
  -------------------------------------------------------------------------------------------------------------------------------
 
+  ## 3) 수동 조절 gui띄우는 법
+  
  ros2 run joint_state_publisher_gui joint_state_publisher_gui --ros-args  -p robot_description:="$(< ~/ptz_ws/src/ptz_urdf/urdf/pan_tilt.urdf)"
   
-  ## 수동 조절 gui띄우는 법
